@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Sign up form</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
     <div class="side-container">
@@ -51,15 +52,18 @@
           </div>
           <div>
             <label for="tel-num">PHONE NUMBER</label>
-            <input type="tel" name="tel-num" id="tel-num"required>
+            <input type="tel" name="tel-num" id="tel-num" minlength="9" 
+             maxlength="11" pattern="[0-9]{9,11}" required>
+             <span></span>
           </div>
           <div>
             <label for="password">PASSWORD</label>
             <input type="password" name="password" id="password"required>
+            <span class="no-match"></span>
           </div>
           <div>
-            <label for="password-conformation">CONFIRM PASSWORD</label>
-            <input type="password" name="password-conformation" id="password-conformation" required>
+            <label for="password-confirmation">CONFIRM PASSWORD</label>
+            <input type="password" name="password-confirmation" id="password-confirmation" required>
           </div>
       </div>  
       
