@@ -151,6 +151,10 @@ input:invalid:focus{
   border-color: red;
 }
 
+#tel-num:focus:invalid + span::after{
+content: "*Please enter only numbers";
+}
+
 button{
   font-size: 1.39rem;
   border: none;
@@ -174,5 +178,13 @@ button:active {
 .log-in{
   color: #596D48;
 
+}
+
+span{
+  color: red;
+  display: block;
+  font-size: 0.88rem;
+  position: relative;
+  top:-25%;
 }
 
